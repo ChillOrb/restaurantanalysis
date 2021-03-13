@@ -908,7 +908,7 @@ while 1:
             five.menu(data)
 
         else:
-           speak("sorry i can't have table of  %s" % (data1))
+           speak("sorry we don't have a table for  %s" % (data1))
 
 
     elif choice==2:
@@ -943,7 +943,7 @@ while 1:
                 time.sleep(1)
                 speak("do you want to see strategy")
                 print("[1] show ratings of customer graph")
-                print("[2] show total amount graph")
+                print("[2] show total cost graph")
                 print("[3] show ratings with time graph")
                 print("[4] show total amount graph with time")
                 print("[5] reviews")
@@ -956,7 +956,7 @@ while 1:
 
                 if frame==2:
                     plt.plot(y_data)
-                    plt.title("show total amount graph")
+                    plt.title("show total cost graph")
                     plt.ylabel("profit")
                     plt.show()
                 if frame==3:
@@ -991,8 +991,8 @@ while 1:
                 speak("please re enter your password")
                 i+=1
         if (i > 2 ):
-            print("sorry you does  many attempts")
-            speak("sorry you does so many attempts")
+            print("sorry too many attempts")
+            speak("sorry too many attempts")
             sys.exit()
 
     elif choice==3:
